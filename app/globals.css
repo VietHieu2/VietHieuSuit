@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --height-header: 52px;
+  --width-sidebar: 268px;
+  --white: #ffffff;
+}
+
+div[data-qa='fixed-footer'] {
+  display: none !important;
+}
+
+body {
+  font-size: 14px;
+  font-family: var(--font-roboto);
+  line-height: 17.5px;
+  font-weight: 500;
+  color: #000;
+}
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.home-background {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0)
+    ),
+    url('../public/assets/home-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.header-active {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px 1px 0px #0000001a;
+}
+
+.card {
+  box-shadow: 0px 18px 40px 0px rgba(9, 30, 66, 0.1);
+}
+
+.menu-tab {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.submitted-dialog {
+  background: var(--n-900-alpha-n-900-a-80, rgba(9, 30, 66, 0.8));
+
+  /* TopMenu/BG */
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+}
+/* 
+.contact-bg {
+  background-image: url('../public/assets/contract.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+} */
